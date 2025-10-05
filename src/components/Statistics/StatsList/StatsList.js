@@ -1,7 +1,8 @@
 import { Stat } from './Stat/Stat';
+import { List } from './StatsList.styled';
 export const StatsList = ({ stats }) => {
   return (
-    <ul>
+    <List>
       {stats.map(stat => (
         <Stat
           key={stat.id}
@@ -9,6 +10,6 @@ export const StatsList = ({ stats }) => {
           percentage={stat.percentage}
         ></Stat>
       ))}
-    </ul>
+    </List>
   );
 };

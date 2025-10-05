@@ -1,11 +1,11 @@
 import { StatsTitle } from './StatTitle/StatTitle';
 import { StatsList } from './StatsList/StatsList';
-
+import { Box } from './Statistics.styled';
 export const Statistics = ({ text, stats }) => {
   return (
-    <div>
+    <Box>
       <StatsTitle text={text} />
       <StatsList stats={stats} />
-    </div>
+    </Box>
   );
 };

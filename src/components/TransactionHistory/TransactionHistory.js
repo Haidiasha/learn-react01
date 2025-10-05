@@ -1,14 +1,16 @@
 import { Head } from './Head/Head';
 import { Raw } from './Raw/Raw';
+import { Table } from './TransactionHistory.styled';
+import { Tr } from './Head/Head.styled';
 export const Transactions = ({ transactions }) => {
   return (
-    <table>
+    <Table>
       <thead>
-        <tr>
+        <Tr>
           <Head title="type" />
           <Head title="amount" />
           <Head title="currency" />
-        </tr>
+        </Tr>
       </thead>
       <tbody>
         {transactions.map(transaction => (
@@ -20,6 +22,6 @@ export const Transactions = ({ transactions }) => {
           />
         ))}
       </tbody>
-    </table>
+    </Table>
   );
 };

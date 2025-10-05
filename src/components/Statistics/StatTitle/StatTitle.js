@@ -1,3 +1,5 @@
+import { Title } from './StatTitle.styled';
+
 export const StatsTitle = ({ text }) => {
-  return <h2>{text.toUpperCase()}</h2>;
+  return <Title>{text.toUpperCase()}</Title>;
 };

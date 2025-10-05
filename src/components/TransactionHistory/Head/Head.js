@@ -1,3 +1,4 @@
+import { Th } from './Head.styled';
 export const Head = ({ title }) => {
-  return <th>{title.toUpperCase()}</th>;
+  return <Th>{title.toUpperCase()}</Th>;
 };

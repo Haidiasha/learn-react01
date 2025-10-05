@@ -1,9 +1,10 @@
+import { Td, Tr } from './Raw.styled';
 export const Raw = ({ type, amount, currency }) => {
   return (
-    <tr>
-      <td>{type}</td>
-      <td>{amount}</td>
-      <td>{currency}</td>
-    </tr>
+    <Tr>
+      <Td>{type}</Td>
+      <Td>{amount}</Td>
+      <Td>{currency}</Td>
+    </Tr>
   );
 };
